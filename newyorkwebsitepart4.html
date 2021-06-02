@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Contact Us</title>
+	 <script>
+	 	function validate()
+	 	{
+	 		var name1=document.getElementById("name1").value;
+	 		var phone1=document.getElementById("phone1").value;
+	 		var email1=document.getElementById("email1").value;
+	 		var message1=document.getElementById("message1").value;
+	 		if(name1.length<2)
+	 		{
+	 			text="Please enter a valid name.";
+	 			errormessage.innerHTML=text;
+	 			return false;
+	 		}
+	 		if(isNaN(phone1)||phone1.length!=10)
+	 		{
+	 			text="Please enter a valid phone number"
+	 			errormessage.innerHTML=text;
+	 			return false;
+	 		}
+	 	if(email1.length<6||email1.indexOf("@")==-1)
+	 		{
+	 			text="Please enter a valid email address"
+	 			errormessage.innerHTML=text;
+	 			return false;
+	 		}
+	 	if(message1.length<50)
+	    	{
+	   			text="Please enter atleast 50 characters"
+	   			errormessage.innerHTML=text;
+	   			return false;	
+	   		 }
+	    alert("Your form was submitted succesfully. Thank you for your feedback.");
+	    return true;
+	 	}
+	 </script>
+	 <style>
+	 body {background-color:mediumaquamarine;}
+	 .header{background-color:powderblue;padding:20px;}
+	 .bton {float:right;}
+	 .logo {float:left; padding:10px 0; }
+	 header {background-color:lightpink;}
+	 header::after{ content:""; display:table; clear:both;}
+	 ul {float:left;padding:10px 0;}
+	 nav {float:left;}
+	nav ul {margin:0px;padding:0px;list-style-type:none;}
+	nav li {display:inline-block;margin-left:70px;padding:top 23px;position:relative;}
+	nav a {color:darkviolet;text-transform:uppercase;font-size:15px;text-decoration:none;}
+	nav a:hover {color:blue;}
+	nav a::before { content:''; display:block; height:5px; background-color:#444; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms; }
+	nav a:hover::before { width:100%; }
+	 * {box-sizing:border-box;outline:none;font-family:algerian,"times new roman", arial;}
+	 .wrapper {position:absolute;stop:50%;left:50%;transform-translate(-50%, -50%);max-width:350px;width:100%;background-color:mediumaquamarine;align:center;padding:25px;border-radius:5px;}
+	 .wrapper h2 {text-align:center;margin-bottom:20px;text-transform:uppercase;letter-spacing:3px;color:blue;}
+	 .wrapper .inputfield {margin-bottom:10px;}
+	 .wrapper .inputfield input[type=text], .wrapper textarea {border:3px solid mediumspringgreen;width:100%;padding:10px;}
+	 .wrapper textarea {resize:none;height:80px;}
+	 .wrapper .btn input[type=submit] {border:0px;margin-top:15px; padding:10px;text-align:center;width:100%;background-color:lightgray;color:black;text-transform:uppercase;letter-spacing:5px;font-weight:bold;border-radius:25px;cursor:pointer;}
+	 #errormessage { margin-bottom:20px; background:#fe8b8e; padding:0px; text-align:center; font-size:14px; transition: all 0.5s ease; }
+	 </style>
+ </head>
+	 <body>
+	 <div class="header">
+	 <img src="newyork2.jpg" height=50, width=50, align=center>	 
+	 <button class=bton>
+	 login
+	 </button>
+	 </div>
+	<header>
+	 	<div class="container">
+	 		<h1 class="logo">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="Newyorkwebsite.html">Home</a></li>
+					<li><a href="newyorkwebsitepart2.html">Hotels</a></li>
+					<li><a href="newyorkwebsitepart3.html">About</a></li>
+					<li><a href="newyorkwebsitepart4.html">Contact Us</a></li>
+				</ul>
+			</nav>
+	 	</div>
+	 </header>
+	 <br><br><br><br>
+	 	<div class="container">
+	 		<h1 class="logo">
+			</h1>
+	 <div class="wrapper">
+	 	<h2>Contact us</h2>
+	 <form id="myform" onsubmit="return validate();" method="post"action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSffNNCXSyTTUIBU6yiQb58mvnXGGXRDB7xhrn99BLewh-iViQ/formResponse">
+	 		 <div class="inputfield">
+	 			<input type="text" placeholder="Name" id="name1" name="entry.1147721494">			
+	 		</div>
+	 		<div class="inputfield">
+	 			<input type="text" placeholder="Phone" id="phone1" name="entry.1784737986">	
+	 		</div>
+	 		<div class="inputfield">
+	 			<input type="text" placeholder="Email" id="email1" name="entry.982309096">	
+	 		</div>
+	 		<div class="inputfield">
+				<textarea placeholder="Message" id="message1" name="entry.1593527560"></textarea> 
+	 		</div>
+	 		<div class="btn">
+	 			<input type="submit">
+	 		</div>
+	 	<div id="errormessage"></div>	
+	 	</form>
+	 </div>
+	</body>	
+ </html>

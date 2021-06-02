@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Untitled</title>
+<style>
+.header{background-color:powderblue;padding:20px}
+.btn {float:right;}
+h2.shadow {text-shadow:2px 2px black;text-align:center;color:deeppink;}
+h3.shadow {text-shadow:2px 2px cyan;text-align:center;color:pink;}
+#cf { position:relative; height:200px; width:200px; float:left; margin: 15px; } 
+#cf img { position:absolute; -webkit-transition:opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transistion: opacity 1s ease-in-out; }
+#cf img.top:hover {opacity:0; }
+.rotate {transform:rotate(10deg)}
+.content {color:darkviolet;font-weight:bold;text-decoration:italic;}
+.turn {transform:rotate(-10deg)}
+.footer {background-color:cyan;text-align:center;color:black;padding:10px;}
+ul {float:left;padding:10px 0;}
+	.container {width:80%;margin:0px;}
+	header {background-color:lightpink;}
+	header::after{ content:""; display:table; clear:both;}
+	.logo {float:left; padding:10px 0; }
+	nav {float:left;}
+	nav ul {margin:0px;padding:0px;list-style-type:none;}
+	nav li {display:inline-block;margin-left:70px;padding:top 23px;position:relative;}
+	nav a {color:darkviolet;text-transform:uppercase;font-size:15px;text-decoration:none;}
+	nav a:hover {color:blue;}
+	nav a::before { content:''; display:block; height:5px; background-color:#444; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms; }
+	nav a:hover::before { width:100%; }
+</style>
+ </head>
+	 <body>
+	 <div class="header">
+	 <img src="newyork2.jpg" height=50, width=50, align=center>	 
+	 <button class=btn>
+	 login
+	 </button>
+	 </div>
+	  <header>
+	 	<div class="container">
+	 		<h1 class="logo">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="Newyorkwebsite.html">Home</a></li>
+					<li><a href="newyorkwebsitepart2.html">Hotels</a></li>
+					<li><a href="newyorkwebsitepart3.html">About</a></li>
+					<li><a href="newyorkwebsitepart4.html">Contact Us</a></li>
+				</ul>
+			</nav>
+	 	</div>
+	 </header>
+	<h2 class="shadow">You're gonna love New York</h2>
+	<h3 class="shadow">Central Park</h3>
+	<div class="content">It is the largest and most important public park in Manhattan, New York. It consists of 5 parks and is a popular tourist attraction. Central Park was the first public landscaped park in all of the United States. It takes up roughly 843 acres of land, which is roughly 16 billion New York apartments. </div>
+	<br><br><br><br>
+	<img src="centralpark.jpeg" width=500 height=300 class="rotate">
+	
+		<br><br><br><br><br><br>
+	
+    <h3 class="shadow">Statue of Liberty</h3>
+	<div class="content">The Statue of Liberty is located on Staten Island, New York.  It was a gift from the French to the USA. It was dedicated on October 28, 1886. It represents a Roman Godess.</div>
+	<br><br>
+	<div id="cf">        
+	<img src="statue-of-liberty-1.jpg" width=500 height=300 class=bottom>
+	<img src="statue-of-liberty-2.jpg" width=500 height=300 class=top>
+	</div>
+	
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<h3 class="shadow">Empire State Building</h3>
+	<div class="content">At its top floor, the Empire State Building stands 1,250 feet (380 meters) tall. Counting the spire and antenna, the building clocks in at a mighty 1,454 feet (443 meters). It’s currently the 4th tallest building in New York City, the 6th tallest in the United States, and the 43rd tallest tower in the world.</div>
+	<br><br><br><br>
+	<img src="empire_state_building_1.jpg" width=500 height=300 class="turn">
+	
+	<br><br><br><br>
+	
+	<div class="footer">
+	 <p>To know more about this amazing place <a href="https://en.wikipedia.org/wiki/New_York_City">Click Here</a></p>
+	 </div>
+	 </body>
+ </html>
