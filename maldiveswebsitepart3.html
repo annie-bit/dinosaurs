@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Untitled</title>
+<style>
+.header{background-color:lightpink;padding:20px}
+.btn {float:right;}
+h2.shadow {text-shadow:2px 2px black;text-align:center;color:deeppink;}
+h3.shadow {text-shadow:2px 2px cyan;text-align:center;color:pink;}
+#cf { position:relative; height:200px; width:200px; float:left; margin: 15px; } 
+#cf img { position:absolute; -webkit-transition:opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transistion: opacity 1s ease-in-out; }
+#cf img.top:hover {opacity:0; }
+.rotate {transform:rotate(10deg)}
+.content {color:darkviolet;font-weight:bold;text-decoration:italic;}
+.turn {transform:rotate(-10deg)}
+.footer {background-color:powderblue;text-align:center;color:black;padding:10px;}
+ul {float:left;padding:10px 0;}
+	.container {width:80%;margin:0px;}
+	header {background-color:lightcoral;}
+	header::after{ content:""; display:table; clear:both;}
+	.logo {float:left; padding:10px 0; }
+	nav {float:left;}
+	nav ul {margin:0px;padding:0px;list-style-type:none;}
+	nav li {display:inline-block;margin-left:70px;padding:top 23px;position:relative;}
+	nav a {color:darkviolet;text-transform:uppercase;font-size:15px;text-decoration:none;}
+	nav a:hover {color:blue;}
+	nav a::before { content:''; display:block; height:5px; background-color:#444; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms; }
+	nav a:hover::before { width:100%; }
+</style>
+ </head>
+	 <body>
+	 <div class="header">
+	 <img src="Maldives.jpg" height=50, width=50, align=center>	 
+	 <button class=btn>
+	 login
+	 </button>
+	 </div>
+	  <header>
+	 	<div class="container">
+	 		<h1 class="logo">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="Maldiveswebsite.html">Home</a></li>
+					<li><a href="maldiveswebsitepart2.html">Villas</a></li>
+					<li><a href="maldiveswebsitepart3.html">About</a></li>
+					<li><a href="maldiveswebsitepart4.html">Contact Us</a></li>
+					<li><a href="maldiveswebsitepart5.html">New York Website</a></li>
+				</ul>
+			</nav>
+	 	</div>
+	 </header>
+	<h2 class="shadow">You're gonna love Maldives</h2>
+	<h3 class="shadow">Mirihi Island</h3>
+	<div class="content">Mirihi Island is a small luxury island that can be one of the best places to visit in Maldives. This island offers excellent water villas for your ultimate pleasure. If you’re especially looking for a place cut off from the rest of the world, this can be the perfect place. </div>
+	<br><br><br><br>
+	<img src="Mirihi_island.jpg" width=500 height=300 class="rotate">
+	
+		<br><br><br><br><br><br>
+	
+    <h3 class="shadow">Huvahendhoo Island</h3>
+	<div class="content">If you’re looking for that perfect destination for a family vacation, look no further than Huvahendhoo Island. The island is custom-made to accommodate families and kids. The island has a good collection of restaurants, resorts and spas. It also has a Kids Club.</div>
+	<br><br>
+	<div id="cf">        
+	<img src="Huvahendhoo_island.jpg" width=500 height=300 class=bottom>
+	<img src="Huvahendhoo_Island.jpg" width=500 height=300 class=top>
+	</div>
+	
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<h3 class="shadow">Rangali Island</h3>
+	<div class="content">The Conrad Maldives resort on Rangali Island is an exceptional place for an all-round Maldives experience for families. Those looking for a place that offers fun activities for adults and kids alike can always go here. Indulge in snorkelling, fishing and dolphin sighting or simply relax in the infinity pool where perfectly blue water never ends.</div>
+	<br><br><br><br>
+	<img src="Rangali_Island.jpeg" width=500 height=300 class="turn">
+	
+	<br><br><br><br>
+	
+	<div class="footer">
+	 <p>To know more about this amazing place <a href="https://en.wikipedia.org/wiki/Maldives">Click Here</a></p>
+	 </div>
+	 </body>
+ </html>

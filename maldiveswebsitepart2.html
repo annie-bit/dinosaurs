@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Untitled</title>
+	<style>
+	.header{background-color:lightpink;padding:20px}
+	.btn {float:right;}
+	.innertable {border-collapse:collapse; margin:25px;font-size:30;font-face:arial;align:center;box-shadow:0 0 20px rgba(0, 0,0,0.15);background-color:lightpink;width:96.7%;}
+	.innertable thead tr {background-color:turquoise;color:black;text-align:center;}
+	th,td {padding:15px 12px;}
+	tr { border-bottom:1 px solid darkviolet;}
+	tr:nth-of-type(even) { background-color:deeppink;}
+	tr:last-of-type{border-bottom:2px solid black}
+	tr:active-row { font-weight:bold; color:mediumspringgreen}
+    .awesome{text-align:center;width:300px;height:100px;padding:15px;background-color:mediumspringgreen;box-shadow:10px 10px gray;}
+    .footer {background-color:powderblue;text-align:center;color:black;padding:10px;}
+    ul {float:left;padding:10px 0;}
+	.container {width:80%;margin:0px;}
+	header {background-color:lightcoral;}
+	header::after{ content:""; display:table; clear:both;}
+	.logo {float:left; padding:10px 0; }
+	nav {float:left;}
+	nav ul {margin:0px;padding:0px;list-style-type:none;}
+	nav li {display:inline-block;margin-left:70px;padding:top 23px;position:relative;}
+	nav a {color:darkviolet;text-transform:uppercase;font-size:15px;text-decoration:none;}
+	nav a:hover {color:blue;}
+	nav a::before { content:''; display:block; height:5px; background-color:#444; position:absolute; top:0; width:0%; transition:all ease-in-out 250ms; }
+	nav a:hover::before { width:100%; }
+	</style>
+ </head>
+	 <body>
+	 <div class="header">
+	 <img src="Maldives.jpg" height=50, width=50, align=center>	 
+	 <button class=btn>
+	 login
+	 </button>
+	 </div>
+	  <header>
+	 	<div class="container">
+	 		<h1 class="logo">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="Maldiveswebsite.html">Home</a></li>
+					<li><a href="maldiveswebsitepart2.html">Villas</a></li>
+					<li><a href="maldiveswebsitepart3.html">About</a></li>
+					<li><a href="maldiveswebsitepart4.html">Contact Us</a></li>
+					<li><a href="maldiveswebsitepart5.html">New York Website</a></li>
+				</ul>
+			</nav>
+	 	</div>
+	 </header>
+		<table align=center>
+		<th colspan=14><h1 class="awesome">Maldives villas to stay</h1></th>
+			<table class=innertable table border=2>
+				<thead>
+					<tr><th colspan=4>Image</th>
+						   <th colspan=4>Villa Name</th>
+							<th colspan=4>Price</th>
+				</thead>
+					<tr><td colspan=4> <img src="Reethi_beach_resort.jpg"width=200, height=100></td>
+							<td colspan=4>Reethi beach resort</td>
+							<td colspan=4>From $95 per night</td>
+					<tr><td colspan=4> <img src="Sun_siyam_olhuveli.jpg"width=200, height=100></td>
+							<td colspan=4>Sun Siyam Olhuveli</td>
+							<td colspan=4>From $380 per night</td>
+					<tr><td colspan=4> <img src="JOALI_maldives.jpg"width=200, height=100></td>
+							<td colspan=4>JOALI, Maldives</td>
+							<td colspan=4>From $1,840 per night</td>
+				</table>
+		</table>
+	<div class="footer">
+	 <p>To know more about this amazing place <a href="https://en.wikipedia.org/wiki/Maldives">Click Here</a></p>
+	 </div>
+	 </body>
+ </html>
